@@ -1,4 +1,8 @@
-# ... (líneas anteriores)
+# 1. Usar una imagen base de PHP ligera
+FROM php:8.2-cli-alpine
+
+# 2. Establecer el directorio de trabajo donde estará tu código
+WORKDIR /app
 
 # 3. Copiar todos tus archivos PHP, CSS, y scripts al contenedor
 COPY . /app/
