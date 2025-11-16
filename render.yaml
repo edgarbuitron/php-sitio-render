@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: sitio-php
+    env: static
+    buildCommand: ""
+    staticPublishPath: "."
+    startCommand: "./start.sh"
