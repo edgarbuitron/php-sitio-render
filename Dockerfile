@@ -8,8 +8,7 @@ WORKDIR /app
 COPY . /app/
 
 # 4. Asegurarse de que el script start.sh sea ejecutable
-RUN chmod +x ./start.sh
+RUN chmod +x /app/start.sh
 
-# 5. Definir el comando de inicio usando tu start.sh
-# Render lo ejecutará gracias a tu configuración.
-CMD ["./start.sh"]
+# 5. Definir el comando de inicio usando la ruta absoluta
+CMD ["/app/start.sh"]
